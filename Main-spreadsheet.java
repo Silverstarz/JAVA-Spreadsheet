@@ -33,7 +33,7 @@ public class Main {
 
 		for(;;){
 			System.out.println();
-			System.out.println("Entrez numéro de SEMAINE : 1, 2 ou 3 ");
+			System.out.println("Entrez numéro de SEMAINE (1, 2 ou 3) ");
 			int semaine = sc.nextInt();
 
 			switch (semaine)
@@ -184,7 +184,7 @@ public class Main {
 			default:
 				System.out.println("Tu ne comprends pas le français ? ...");
 				System.out.println();
-				System.out.println("entrez le numéro de SEMAINE : 1, 2 ou 3 ");             
+				System.out.println("Entrez numéro de SEMAINE (1, 2 ou 3)");             
 			}
 		}
 	}
