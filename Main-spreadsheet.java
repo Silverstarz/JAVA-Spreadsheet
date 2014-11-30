@@ -16,7 +16,8 @@ public class Main {
 
 	//static String key_test_sheet = "1IZv6etSZprtK3D0AGDM9yF0guLV_LP58XR9M4HDY0g8";
 	//static String key_test_sheet_edt = "1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4";
-	static String key_edt_m2 ="1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4";
+	static String key_test_sheet_edt1 ="1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4";
+	static String key_test_sheet_edt2 ="1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM";
 
 	public static void main(String[] args)  throws AuthenticationException, MalformedURLException, IOException, ServiceException {
 
@@ -45,13 +46,13 @@ public class Main {
 
 				switch(jour) {
 				case 0:
-					//  CELL_FEED_URL_semaine1 complète avec [min-row=1&min-col=2&max-col=4]
+					//  CELL_FEED_URL_semaine1 complète avec [min-row=5&max-row=43&min-col=2&max-col=4]
 					System.out.println("---------------------");
 					System.out.println("|SEMAINE 1 COMPLETE |");
 					System.out.println("---------------------");
 
 					URL CELL_FEED_URL_semaine1 = new URL(
-							"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=1&min-col=2&max-col=4");
+							"https://spreadsheets.google.com/feeds/cells/1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM/1/public/values?min-row=5&max-row=43&min-col=2&max-col=4");
 
 					CellFeed cellFeed1 = service.getFeed(CELL_FEED_URL_semaine1, CellFeed.class);	
 					//Pour toutes les cellules
@@ -66,7 +67,7 @@ public class Main {
 					System.out.println("|SEMAINE 1 LUNDI    |");
 					System.out.println("---------------------");
 					URL CELL_FEED_URL_semaine1_lundi = new URL(
-							"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=5&max-row=11&min-col=2&max-col=4");
+							"https://spreadsheets.google.com/feeds/cells/1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM/1/public/values?min-row=5&max-row=11&min-col=2&max-col=4");
 
 					CellFeed cellFeed1_lundi = service.getFeed(CELL_FEED_URL_semaine1_lundi, CellFeed.class);	
 					//Pour toutes les cellules
@@ -82,7 +83,7 @@ public class Main {
 					System.out.println("---------------------");
 
 					URL CELL_FEED_URL_semaine1_mardi = new URL(
-							"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=13&max-row=19&min-col=2&max-col=4");
+							"https://spreadsheets.google.com/feeds/cells/1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM/1/public/values?min-row=13&max-row=19&min-col=2&max-col=4");
 
 					CellFeed cellFeed1_mardi = service.getFeed(CELL_FEED_URL_semaine1_mardi, CellFeed.class);	
 					//Pour toutes les cellules
@@ -98,7 +99,7 @@ public class Main {
 					System.out.println("---------------------");
 
 					URL CELL_FEED_URL_semaine1_mercredi = new URL(
-							"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=21&max-row=27&min-col=2&max-col=4");
+							"https://spreadsheets.google.com/feeds/cells/1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM/1/public/values?min-row=21&max-row=27&min-col=2&max-col=4");
 
 					CellFeed cellFeed1_mercredi = service.getFeed(CELL_FEED_URL_semaine1_mercredi, CellFeed.class);	
 					//Pour toutes les cellules
@@ -114,7 +115,7 @@ public class Main {
 					System.out.println("---------------------");
 
 					URL CELL_FEED_URL_semaine1_jeudi = new URL(
-							"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=29&max-row=35&min-col=2&max-col=4");
+							"https://spreadsheets.google.com/feeds/cells/1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM/1/public/values?min-row=29&max-row=35&min-col=2&max-col=4");
 
 					CellFeed cellFeed1_jeudi = service.getFeed(CELL_FEED_URL_semaine1_jeudi, CellFeed.class);	
 					//Pour toutes les cellules
@@ -130,7 +131,7 @@ public class Main {
 					System.out.println("---------------------");
 
 					URL CELL_FEED_URL_semaine1_vendredi = new URL(
-							"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=37&max-row=43&min-col=2&max-col=4");
+							"https://spreadsheets.google.com/feeds/cells/1JE1zlcJZAwIy7H3jk0BM6oucrAT4kDFqLoooQc6onQM/1/public/values?min-row=37&max-row=43&min-col=2&max-col=4");
 
 					CellFeed cellFeed1_vendredi = service.getFeed(CELL_FEED_URL_semaine1_vendredi, CellFeed.class);	
 					//Pour toutes les cellules
@@ -148,12 +149,12 @@ public class Main {
 
 
 			case 2:
-				//  CELL_FEED_URL_semaine2 complète avec [min-row=1&min-col=5&max-col=7]
+				//  CELL_FEED_URL_semaine2 complète avec [min-row=5&max-row=43&min-col=5&max-col=7]
 				System.out.println("---------------------");
 				System.out.println("|SEMAINE 2 COMPLETE |");
 				System.out.println("---------------------");
 				URL CELL_FEED_URL_semaine2 = new URL(
-						"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=1&min-col=5&max-col=7");
+						"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=5&max-row=43&min-col=5&max-col=7");
 
 				CellFeed cellFeed2 = service.getFeed(CELL_FEED_URL_semaine2, CellFeed.class);	
 				//Pour toutes les cellules
@@ -166,13 +167,13 @@ public class Main {
 
 
 			case 3:
-				//  CELL_FEED_URL_semaine3 complète avec [min-row=1&min-col=8&max-col=10]
+				//  CELL_FEED_URL_semaine3 complète avec [min-row=5&max-row=43&min-col=8&max-col=10]
 				System.out.println("---------------------");
 				System.out.println("|SEMAINE 3 COMPLETE |");
 				System.out.println("---------------------");
 
 				URL CELL_FEED_URL_semaine3 = new URL(
-						"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=1&min-col=8&max-col=10");
+						"https://spreadsheets.google.com/feeds/cells/1mGGdFoJlasCbSQbml_WGmoRLKcCsnRUJHwLFMaWtdY4/1/public/values?min-row=5&max-row=43&min-col=8&max-col=10");
 
 				CellFeed cellFeed3 = service.getFeed(CELL_FEED_URL_semaine3, CellFeed.class);	
 				//Pour toutes les cellules
